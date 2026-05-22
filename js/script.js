@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Chauhan Realty — Site Scripts
+   Chauhan Realty & Associates — Site Scripts
    - Mobile nav toggle
    - Sticky header scroll state
    - Scroll reveal (Intersection Observer)
@@ -75,6 +75,109 @@
   /* -------------------- Footer year -------------------- */
   const yearEl = document.querySelector('[data-year]');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* -------------------- Gallery filters (projects page) -------------------- */
+  const filterBar = document.querySelector('.filters');
+  const gallery   = document.querySelector('.gallery');
+  if (filterBar && gallery) {
+    const buttons = filterBar.querySelectorAll('.filter-btn');
+    const items   = gallery.querySelectorAll('[data-category]');
+
+    // Compute counts and append to button labels
+    const counts = { all: items.length };
+    items.forEach((el) => {
+      const cat = el.dataset.category;
+      counts[cat] = (counts[cat] || 0) + 1;
+    });
+    buttons.forEach((btn) => {
+      const f = btn.dataset.filter;
+      const countEl = btn.querySelector('.count');
+      if (countEl && counts[f] != null) countEl.textContent = `(${counts[f]})`;
+    });
+
+    filterBar.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      const filter = btn.dataset.filter;
+      buttons.forEach((b) => b.classList.toggle('is-active', b === btn));
+      items.forEach((el) => {
+        const matches = filter === 'all' || el.dataset.category === filter;
+        el.classList.toggle('is-hidden', !matches);
+      });
+    });
+  }
+
+  /* -------------------- Contact form validation -------------------- */
+  const contactForm = document.querySelector('.js-contact-form');
+  if (contactForm) {
+    const statusEl = contactForm.querySelector('.form-status');
+
+    const setError = (field, msg) => {
+      const wrap = field.closest('.form-field');
+      if (!wrap) return;
+      wrap.classList.add('has-error');
+      const err = wrap.querySelector('.error-msg');
+      if (err && msg) err.textContent = msg;
+    };
+    const clearError = (field) => {
+      const wrap = field.closest('.form-field');
+      if (wrap) wrap.classList.remove('has-error');
+    };
+
+    contactForm.querySelectorAll('input, select, textarea').forEach((f) => {
+      f.addEventListener('input',  () => clearError(f));
+      f.addEventListener('change', () => clearError(f));
+    });
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
+      const data = {};
+
+      const required = contactForm.querySelectorAll('[required]');
+      required.forEach((f) => {
+        const v = (f.value || '').trim();
+        if (!v) { setError(f, 'This field is required.'); valid = false; return; }
+        data[f.name] = v;
+      });
+
+      const email = contactForm.querySelector('input[type="email"]');
+      if (email && email.value.trim()) {
+        const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+        if (!ok) { setError(email, 'Please enter a valid email.'); valid = false; }
+      }
+
+      const phone = contactForm.querySelector('input[name="phone"]');
+      if (phone && phone.value.trim()) {
+        const digits = phone.value.replace(/\D/g, '');
+        if (digits.length < 10) { setError(phone, 'Please enter a valid phone number.'); valid = false; }
+      }
+
+      if (!valid) {
+        if (statusEl) { statusEl.textContent = 'Please fix the highlighted fields.'; statusEl.className = 'form-status is-error'; }
+        const firstError = contactForm.querySelector('.has-error input, .has-error select, .has-error textarea');
+        if (firstError) firstError.focus();
+        return;
+      }
+
+      // Success path: open the user's mail client with a pre-filled email.
+      // Easy to swap for Formspree / a backend endpoint later.
+      const name    = contactForm.elements['name']?.value.trim() || '';
+      const fromEm  = contactForm.elements['email']?.value.trim() || '';
+      const fromPh  = contactForm.elements['phone']?.value.trim() || '';
+      const service = contactForm.elements['service']?.value.trim() || 'General enquiry';
+      const message = contactForm.elements['message']?.value.trim() || '';
+
+      const subject = encodeURIComponent(`Enquiry: ${service} — ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${fromEm}\nPhone: ${fromPh}\nService: ${service}\n\nMessage:\n${message}`
+      );
+      const mailto = `mailto:contact@chauhanrealty.in?subject=${subject}&body=${body}`;
+
+      if (statusEl) { statusEl.textContent = 'Opening your email app… If nothing happens, please call us directly.'; statusEl.className = 'form-status is-success'; }
+      window.location.href = mailto;
+    });
+  }
 
   /* -------------------- Lightbox (projects page) -------------------- */
   // Will be initialized when project gallery is rendered.
