@@ -1,0 +1,458 @@
+{
+  "office-reception": {
+    "name": "office-reception",
+    "w": 2400,
+    "h": 3200,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/office-reception-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/office-reception-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/office-reception-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/office-reception-2400.webp"
+      }
+    ]
+  },
+  "office-reception-wide": {
+    "name": "office-reception-wide",
+    "w": 2400,
+    "h": 3200,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/office-reception-wide-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/office-reception-wide-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/office-reception-wide-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/office-reception-wide-2400.webp"
+      }
+    ]
+  },
+  "office-feature-wall": {
+    "name": "office-feature-wall",
+    "w": 3200,
+    "h": 2400,
+    "ratio": 1.3333,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "file": "assets/img/office-feature-wall-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 720,
+        "file": "assets/img/office-feature-wall-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "file": "assets/img/office-feature-wall-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 1800,
+        "file": "assets/img/office-feature-wall-2400.webp"
+      }
+    ]
+  },
+  "office-lounge": {
+    "name": "office-lounge",
+    "w": 2400,
+    "h": 3200,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/office-lounge-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/office-lounge-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/office-lounge-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/office-lounge-2400.webp"
+      }
+    ]
+  },
+  "office-detail": {
+    "name": "office-detail",
+    "w": 3072,
+    "h": 4096,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/office-detail-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/office-detail-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/office-detail-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/office-detail-2400.webp"
+      }
+    ]
+  },
+  "construction-frame": {
+    "name": "construction-frame",
+    "w": 3840,
+    "h": 2160,
+    "ratio": 1.7778,
+    "variants": [
+      {
+        "w": 480,
+        "h": 270,
+        "file": "assets/img/construction-frame-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 540,
+        "file": "assets/img/construction-frame-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 900,
+        "file": "assets/img/construction-frame-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 1350,
+        "file": "assets/img/construction-frame-2400.webp"
+      }
+    ]
+  },
+  "construction-steel": {
+    "name": "construction-steel",
+    "w": 4032,
+    "h": 3024,
+    "ratio": 1.3333,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "file": "assets/img/construction-steel-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 720,
+        "file": "assets/img/construction-steel-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "file": "assets/img/construction-steel-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 1800,
+        "file": "assets/img/construction-steel-2400.webp"
+      }
+    ]
+  },
+  "construction-scaffold": {
+    "name": "construction-scaffold",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/construction-scaffold-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/construction-scaffold-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/construction-scaffold-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/construction-scaffold-2400.webp"
+      }
+    ]
+  },
+  "construction-fitout": {
+    "name": "construction-fitout",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/construction-fitout-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/construction-fitout-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/construction-fitout-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/construction-fitout-2400.webp"
+      }
+    ]
+  },
+  "roof-finished": {
+    "name": "roof-finished",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/roof-finished-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/roof-finished-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/roof-finished-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/roof-finished-2400.webp"
+      }
+    ]
+  },
+  "residence-living": {
+    "name": "residence-living",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/residence-living-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/residence-living-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/residence-living-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/residence-living-2400.webp"
+      }
+    ]
+  },
+  "residence-living-alt": {
+    "name": "residence-living-alt",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/residence-living-alt-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/residence-living-alt-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/residence-living-alt-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/residence-living-alt-2400.webp"
+      }
+    ]
+  },
+  "residence-kitchen": {
+    "name": "residence-kitchen",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/residence-kitchen-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/residence-kitchen-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/residence-kitchen-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/residence-kitchen-2400.webp"
+      }
+    ]
+  },
+  "residence-kitchen-alt": {
+    "name": "residence-kitchen-alt",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/residence-kitchen-alt-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/residence-kitchen-alt-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/residence-kitchen-alt-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/residence-kitchen-alt-2400.webp"
+      }
+    ]
+  },
+  "residence-wardrobe": {
+    "name": "residence-wardrobe",
+    "w": 3024,
+    "h": 4032,
+    "ratio": 0.75,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "file": "assets/img/residence-wardrobe-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "file": "assets/img/residence-wardrobe-960.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "file": "assets/img/residence-wardrobe-1600.webp"
+      },
+      {
+        "w": 2400,
+        "h": 3200,
+        "file": "assets/img/residence-wardrobe-2400.webp"
+      }
+    ]
+  },
+  "residence-bathroom": {
+    "name": "residence-bathroom",
+    "w": 1575,
+    "h": 1470,
+    "ratio": 1.0714,
+    "variants": [
+      {
+        "w": 480,
+        "h": 448,
+        "file": "assets/img/residence-bathroom-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 896,
+        "file": "assets/img/residence-bathroom-960.webp"
+      }
+    ]
+  },
+  "logo": {
+    "name": "logo",
+    "w": 1024,
+    "h": 942,
+    "ratio": 1.087,
+    "variants": [
+      {
+        "w": 480,
+        "h": 442,
+        "file": "assets/img/logo-480.webp"
+      },
+      {
+        "w": 960,
+        "h": 883,
+        "file": "assets/img/logo-960.webp"
+      }
+    ]
+  }
+}

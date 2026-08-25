@@ -1,0 +1,9 @@
+# Raw phone video originals — 4K .MOV, not used by the site (won't play in
+# browsers, can't transcode without ffmpeg). The web-ready hero clip lives in
+# assets/video/. Keep these local as source material.
+videos/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
