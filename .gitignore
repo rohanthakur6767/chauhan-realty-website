@@ -7,3 +7,6 @@ videos/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Kilo Code extension worktrees (local only, can be large)
+.kilo/
